@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] int hp;
-    [SerializeField] float speed;
-    [SerializeField] int gold;
+    [SerializeField] public int hp;
+    [SerializeField] public float speed;
+    [SerializeField] public int gold;
     public Route route;
     private int pointIndex;
     // Start is called before the first frame update
