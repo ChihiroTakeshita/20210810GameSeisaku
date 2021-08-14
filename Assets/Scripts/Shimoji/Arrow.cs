@@ -22,7 +22,8 @@ public class Arrow : MonoBehaviour
             targetEnemy.hp -= 1;
             if (targetEnemy.hp <= 0)
             {
-                Destroy (targetEnemy.gameObject);
+                Destroy(targetEnemy.gameObject);
+                FindObjectOfType<Player>().gold += targetEnemy.gold;
             }
             transform.SetParent(targetEnemy.transform);
             enabled = false;
