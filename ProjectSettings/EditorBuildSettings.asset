@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/yamazaki.unity
+    guid: 7fe5a91c784ab904b9c16fd6a37be15b
+  - enabled: 1
+    path: Assets/Scenes/yamazaki2.unity
+    guid: a3d2491cbb6755f49aa68fe1d0853a77
   m_configObjects: {}
