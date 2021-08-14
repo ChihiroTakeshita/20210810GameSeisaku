@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Route : MonoBehaviour
 {
-    [SerializeField] Point[] points;
+    public Point[] points;
 
     void OnDrawGizmosSelected()
     {
