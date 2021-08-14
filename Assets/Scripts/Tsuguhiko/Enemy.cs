@@ -7,7 +7,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] int hp;
     [SerializeField] float speed;
     [SerializeField] int gold;
-    [SerializeField] Route route;
+    public Route route;
     private int pointIndex;
     // Start is called before the first frame update
     void Start()
