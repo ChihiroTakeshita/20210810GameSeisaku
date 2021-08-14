@@ -53,7 +53,7 @@ public class GameMain : MonoBehaviour
                         state = GAME_STATE.GAME_OVER;
                     }
 
-                    else if (enemyManager.EnemyCut == 0)
+                    else if (enemyManager.EnemyCnt == 0)
                     {
                         state = GAME_STATE.WAVE_CLEAR;
                     }
