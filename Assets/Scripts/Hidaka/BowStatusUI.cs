@@ -8,6 +8,7 @@ public class BowStatusUI : MonoBehaviour
     public Text lvText;
     public Text lvUpButtonText;
     public Text sellButtonText;
+    [SerializeField]
 
     void Update()
     {
