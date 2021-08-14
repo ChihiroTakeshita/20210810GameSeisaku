@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,6 +8,9 @@ public class EnemyManager : MonoBehaviour
     public Wave[] waves;
     public int wave;
     public float time;
+
+    //まだこのwaveで出現していない敵+画面上の敵の数
+    public int EnemyCnt => waves[wave].patterns.Count + FindObjectsOfType<Enemy>().Length;
 
     // Update is called once per frame
     void Update()
@@ -29,13 +33,13 @@ public class EnemyManager : MonoBehaviour
     }
 }
 
-[SerializeField]
+[Serializable]
 public class Wave
 {
     public List<EnemyPattern> patterns;
 }
 
-[SerializeField]
+[Serializable]
 public class EnemyPattern
 {
     public float time;
