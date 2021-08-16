@@ -12,6 +12,7 @@ public class SoundEffectManager : MonoBehaviour
     AudioSource se;
 
     [SerializeField] AudioClip defeatEnemy;
+    [SerializeField] AudioClip gameClear;
     [SerializeField] AudioClip gameOvar;
     [SerializeField] AudioClip myDamage;
     [SerializeField] AudioClip setBow;
@@ -30,6 +31,11 @@ public class SoundEffectManager : MonoBehaviour
     public void DefeatEnemySE()
     {
         se.PlayOneShot(defeatEnemy);
+    }
+
+    public void GameClearSE()
+    {
+        se.PlayOneShot(gameClear);
     }
 
     public void GameOverSE()

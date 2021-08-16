@@ -141,6 +141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defeatEnemy: {fileID: 8300000, guid: af901d65a859e0746836ab23a5ccfd94, type: 3}
+  gameClear: {fileID: 8300000, guid: 12db9fe4677310042ab92e46e6c7544d, type: 3}
   gameOvar: {fileID: 8300000, guid: 1bc83eb13f29d8c439741837c46c0e96, type: 3}
   myDamage: {fileID: 8300000, guid: ba3e54d50462a2845a2cfbe3770e3713, type: 3}
   setBow: {fileID: 8300000, guid: 3bb7b9f45561c384abd8ead8428bd7e7, type: 3}
