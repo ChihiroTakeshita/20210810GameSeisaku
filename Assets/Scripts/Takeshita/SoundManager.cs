@@ -10,11 +10,12 @@ using UnityEngine.SceneManagement;
 public class SoundManager : MonoBehaviour
 {
     [SerializeField] public AudioSource prologue;
+    [SerializeField] public AudioSource rule;
     [SerializeField] public AudioSource game;
     [SerializeField] public AudioSource gameClear;
     [SerializeField] public AudioSource gamOver;
 
-    private string beforeScene = "Prologue";
+    private string beforeScene = "Yamazaki2";
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,7 @@ public class SoundManager : MonoBehaviour
         DontDestroyOnLoad(game.gameObject);
         DontDestroyOnLoad(gameClear.gameObject);
         DontDestroyOnLoad(gamOver.gameObject);
+        DontDestroyOnLoad(rule.gameObject);
 
         SceneManager.activeSceneChanged += OnActiveSceneChanged;
     }
@@ -36,9 +38,21 @@ public class SoundManager : MonoBehaviour
 
     void OnActiveSceneChanged(Scene prevScene, Scene nextScene)
     {
-        if(beforeScene == "Prologue" && nextScene.name == "Title")
+        if(beforeScene == "Yamazaki2" && nextScene.name == "Yamazaki")
+        {
+            game.Stop();
+            prologue.Play();
+        }
+
+        if(beforeScene =="Yamazaki" && nextScene.name == "Rule")
         {
             prologue.Stop();
+            rule.Play();
+        }
+
+        if(beforeScene == "Rule" && nextScene.name == "Game")
+        {
+            rule.Stop();
             game.Play();
         }
 
