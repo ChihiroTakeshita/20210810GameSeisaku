@@ -378,7 +378,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Tsuguhiko2
-  PushButton_SE: {fileID: 0}
+  PushButton_SE: {fileID: 8300000, guid: 694546125ab165544b078cbfb2dd7c60, type: 3}
 --- !u!4 &1601336471
 Transform:
   m_ObjectHideFlags: 0
