@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Tsuguhiko.unity
+    guid: c852d4d227f612a4d891e1f6476f69f4
+  - enabled: 1
+    path: Assets/Scenes/Tsuguhiko2.unity
+    guid: 32515056474aefe4d84e744249d6ec46
+  - enabled: 1
     path: Assets/Scenes/yamazaki.unity
     guid: 7fe5a91c784ab904b9c16fd6a37be15b
   - enabled: 1
