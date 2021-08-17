@@ -11,10 +11,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tsuguhiko2.unity
     guid: 32515056474aefe4d84e744249d6ec46
+    path: Assets/Scenes/yamazaki2.unity
+    guid: a3d2491cbb6755f49aa68fe1d0853a77
   - enabled: 1
     path: Assets/Scenes/yamazaki.unity
     guid: 7fe5a91c784ab904b9c16fd6a37be15b
   - enabled: 1
-    path: Assets/Scenes/yamazaki2.unity
-    guid: a3d2491cbb6755f49aa68fe1d0853a77
+    path: Assets/Scenes/Rule.unity
+    guid: d8dac2bb9e688c948a56fde21a2bef0a
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: 6ce27ece134e0ac4493ec36bad6bf4a5
   m_configObjects: {}

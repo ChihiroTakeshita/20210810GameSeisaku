@@ -9,13 +9,21 @@ public class EnemyManager : MonoBehaviour
     public int wave;
     public float time;
 
-    //まだこのwaveで出現していない敵+画面上の敵の数
+    //まだこのwaveで出現してない敵＋画面上の敵の数
     public int EnemyCnt => waves[wave].patterns.Count + FindObjectsOfType<Enemy>().Length;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+
+    }
 
     // Update is called once per frame
     void Update()
     {
-
+        wave = 0;
+        time += Time.deltaTime;
+        CreateEnemy();
     }
 
     public void CreateEnemy()
@@ -31,6 +39,7 @@ public class EnemyManager : MonoBehaviour
 
         waves[wave].patterns.RemoveAll(pattern => pattern.time <= time);
     }
+
 }
 
 [Serializable]
