@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 /// <summary>
-///   画面遷移のスクリプト（spaceキーを押したら遷移する)
+///   画面遷移のスクリプト（マウス左クリックを押したら遷移する)
 /// </summary>
 
 
@@ -44,10 +44,10 @@ public class Scene_Changer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) ) // spaceキーが押されたら
+        if (Input.GetMouseButtonDown(0) ) // マウス左クリックしたら
         {
             audioSource.PlayOneShot(PushButton_SE); // Buttonの効果音を鳴らす
-            StartCoroutine(ChangeScene(sceneName, 1.0f));
+            StartCoroutine(ChangeScene(sceneName, 2.0f));
         }
     }
 
